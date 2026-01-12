@@ -1,5 +1,7 @@
 #include "ClapTrap.hpp"
 
+//___________________ PARAMETIZED_CONSTRUCTOR__
+
 ClapTrap::ClapTrap(std::string &target) {
     _name = target;
     _hitPoints = 10;
@@ -8,9 +10,13 @@ ClapTrap::ClapTrap(std::string &target) {
     std::cout << "ClapTrap " << _name << " created" << std::endl;
 }
 
+//_________________________________DESTRUCTOR__
+
 ClapTrap::~ClapTrap() {
     std::cout << "ClapTrap " << _name << " destroyed" << std::endl;
 }
+
+//___________________________________ METHODS__
 
 void ClapTrap::attack(const std::string& target) {
     if(_energyPoints > 0) {

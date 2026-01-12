@@ -1,8 +1,12 @@
 #include "FragTrap.hpp"
 
+//___________________ PARAMETIZED_CONSTRUCTOR__
+
 FragTrap::FragTrap(std::string &name): ClapTrap(name, 100, 100, 30) {
     std::cout << "FragTrap " << getName() << " has been created" << std::endl;
 }
+
+//_________________________________DESTRUCTOR__
 
 FragTrap::~FragTrap() {
     std::cout << "FragTrap " << getName() << " destroyed" << std::endl;
