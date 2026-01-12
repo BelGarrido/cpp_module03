@@ -50,7 +50,7 @@ void ClapTrap::beRepaired(unsigned int amount) {
         std::cout << "ClapTrap " << _name << " has no energy points" << std::endl;
 }
 
-//GETTERS
+//GETTERS & SETTERS
 
 std::string ClapTrap::getName() const {
     return _name;
