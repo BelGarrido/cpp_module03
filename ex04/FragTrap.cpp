@@ -2,6 +2,7 @@
 
 //___________________ PARAMETIZED_CONSTRUCTOR__
 
+
 FragTrap::FragTrap(std::string &name): ClapTrap(name, 100, 100, 30) {
     std::cout << "FragTrap " << getName() << " has been created" << std::endl;
 }
@@ -15,6 +16,7 @@ FragTrap::~FragTrap() {
  void FragTrap::highFivesGuys(void) {
     std::cout << "FragTrap " << getName() << " request a high five! ✋ Anyone up?" << std::endl;
 }
+
 /*
 void FragTrap::attack(const std::string &target) {
     if(getEnergyPoints() > 0) {

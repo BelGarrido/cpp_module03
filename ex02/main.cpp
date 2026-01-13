@@ -3,7 +3,7 @@
 
 int main(){
     
-    std::string nameCT = "Ruben";
+    std::string nameCT = "BuzzBit";
     ClapTrap clapTrap1(nameCT);
     std::cout << "\n";
     std::cout << "*´¯`*..*´¯`* [ Display info: " << clapTrap1.getName() << " ] *´¯`*..*´¯`* " << std::endl; 
@@ -12,7 +12,7 @@ int main(){
     std::cout << "AtackDamage: " << clapTrap1.getAttackDamage() << std::endl; 
     std::cout << "EnergyPoints: " << clapTrap1.getEnergyPoints() << std::endl;
 
-    std::string nameST = "Ana";
+    std::string nameST = "BleepBlop";
     ScavTrap scavTrap1(nameST);
 
     std::cout << "\n";
