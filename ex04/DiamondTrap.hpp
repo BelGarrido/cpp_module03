@@ -11,6 +11,14 @@ class DiamondTrap: public FragTrap, public ScavTrap {
     public:
         DiamondTrap(std::string &name);
         ~DiamondTrap();
+        std::string getName() const;
+        void whoAmI();
+        using ScavTrap::guardGate;
+        using ScavTrap::attack;
+        using FragTrap::highFivesGuys;
+
 };
+
+
 
 #endif

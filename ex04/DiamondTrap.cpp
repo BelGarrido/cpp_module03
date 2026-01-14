@@ -1,8 +1,7 @@
 #include "DiamondTrap.hpp"
 
-
 DiamondTrap::DiamondTrap(std::string &name)
-    : ClapTrap(name), 
+    : ClapTrap(name + "_clap_name"), 
     FragTrap(name), 
     ScavTrap(name), 
     _name(name)
@@ -13,5 +12,14 @@ DiamondTrap::DiamondTrap(std::string &name)
 };
 
 DiamondTrap::~DiamondTrap() {
+    std::cout << "DiamondTrap " << getName() << " destroyed" << std::endl;
+}
 
+std::string DiamondTrap::getName() const {
+    return _name;
+}
+
+void DiamondTrap::whoAmI() {
+    std::cout << "DiamondTrap's name: " << getName() << std::endl;
+    std::cout << "ClapTrap's name: " << ClapTrap::getName() << std::endl;
 }

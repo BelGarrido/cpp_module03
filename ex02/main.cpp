@@ -11,6 +11,7 @@ int main(){
     std::cout << "HitPoints: " << clapTrap1.getHitPoints() << std::endl; 
     std::cout << "AtackDamage: " << clapTrap1.getAttackDamage() << std::endl; 
     std::cout << "EnergyPoints: " << clapTrap1.getEnergyPoints() << std::endl;
+    clapTrap1.attack("ccccccccccccccccccccpp");
 
     std::string nameST = "BleepBlop";
     ScavTrap scavTrap1(nameST);
@@ -23,7 +24,7 @@ int main(){
     std::cout << "EnergyPoints: " << scavTrap1.getEnergyPoints() << std::endl;
    
     scavTrap1.guardGate();
-    scavTrap1.attack("cpp");
+    scavTrap1.attack("cppppppppppppppppp");
 
     std::cout << "\n";
     std::cout << "*´¯`*..*´¯`* [ Display info: " << scavTrap1.getName() << " ] *´¯`*..*´¯`* " << std::endl; 

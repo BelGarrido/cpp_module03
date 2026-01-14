@@ -2,7 +2,7 @@
 
 //___________________ PARAMETIZED_CONSTRUCTOR__
 
-ClapTrap::ClapTrap(std::string &target) {
+ClapTrap::ClapTrap(const std::string &target) {
     _name = target;
     _hitPoints = 10;
     _energyPoints = 10;
