@@ -5,7 +5,6 @@
 #include <iostream>
 
 class ClapTrap {
-  
     private:
         std::string _name;
         int _hitPoints;
@@ -18,6 +17,7 @@ class ClapTrap {
 
         ClapTrap(std::string &target);
         ClapTrap(std::string &target, int hitPoints, int energyPoint, int attackDamage);
+        ClapTrap &operator=(const ClapTrap &original);
         ~ClapTrap();
 
       //________________________________METHODS__

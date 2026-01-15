@@ -14,6 +14,7 @@ class ClapTrap {
     public:
         ClapTrap(const std::string &target);
         ClapTrap(std::string &target, int hitPoints, int energyPoint, int attackDamage);
+        ClapTrap &operator=(const ClapTrap &original);
         ~ClapTrap();
         void attack(const std::string& target);
         void takeDamage(unsigned int amount);
@@ -25,6 +26,8 @@ class ClapTrap {
         int getAttackDamage();
 
         void setEnergyPoints(unsigned int amount);
+        void setHitPoints(unsigned int amount);
+        void setAttackDamage(unsigned int amount);
 } ;
 
 #endif

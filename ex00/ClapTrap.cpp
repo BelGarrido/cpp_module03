@@ -10,6 +10,14 @@ ClapTrap::ClapTrap(std::string &target) {
     std::cout << "ClapTrap " << _name << " created" << std::endl;
 }
 
+ClapTrap &ClapTrap::operator=(const ClapTrap &original) {
+    this->_name = original._name;
+    this->_attackDamage = original._attackDamage;
+    this->_hitPoints = original._hitPoints;
+    this->_energyPoints = original._energyPoints;
+    return *this;
+}
+
 //_________________________________DESTRUCTOR__
 
 ClapTrap::~ClapTrap() {

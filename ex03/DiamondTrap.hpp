@@ -16,9 +16,6 @@ class DiamondTrap: public FragTrap, public ScavTrap {
         using ScavTrap::guardGate;
         using ScavTrap::attack;
         using FragTrap::highFivesGuys;
-
 };
-
-
 
 #endif

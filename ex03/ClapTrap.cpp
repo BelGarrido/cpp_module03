@@ -18,6 +18,14 @@ ClapTrap::ClapTrap(std::string &target, int hitPoints, int energyPoint, int atta
     std::cout << "ClapTrap " << _name << " created" << std::endl;
 }
 
+ClapTrap &ClapTrap::operator=(const ClapTrap &original) {
+    this->_name = original._name;
+    this->_attackDamage = original._attackDamage;
+    this->_hitPoints = original._hitPoints;
+    this->_energyPoints = original._energyPoints;
+    return *this;
+}
+
 //_________________________________DESTRUCTOR__
 
 ClapTrap::~ClapTrap() {
@@ -78,4 +86,12 @@ int ClapTrap::getHitPoints() {
 
 void ClapTrap::setEnergyPoints(unsigned int amount) {
     _energyPoints = amount;
+}
+
+void ClapTrap::setHitPoints(unsigned int amount) {
+    _hitPoints = amount;
+}
+
+void ClapTrap::setAttackDamage(unsigned int amount) {
+    _attackDamage = amount;
 }

@@ -6,9 +6,12 @@ DiamondTrap::DiamondTrap(std::string &name)
     ScavTrap(name), 
     _name(name)
 {
-    _hitPoints = FragTrap::_hitPoints;
+    ClapTrap::setEnergyPoints(50);
+    ClapTrap::setHitPoints(100);
+    ClapTrap::setAttackDamage(30);
+/*   _hitPoints = FragTrap::_hitPoints;
     _energyPoints = ScavTrap::_energyPoints;
-    _attackDamage = FragTrap::_attackDamage;
+    _attackDamage = FragTrap::_attackDamage; */
 };
 
 DiamondTrap::~DiamondTrap() {
