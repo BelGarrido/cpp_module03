@@ -7,6 +7,15 @@ FragTrap::FragTrap(std::string &name): ClapTrap(name, 100, 100, 30) {
     std::cout << "FragTrap " << getName() << " has been created" << std::endl;
 }
 
+//_______________________________________COPY__
+
+FragTrap::FragTrap(const FragTrap &original) : ClapTrap(original) {}
+
+FragTrap& FragTrap::operator=(const FragTrap &original) {
+    ClapTrap::operator=(original);
+    return *this;
+}
+
 //_________________________________DESTRUCTOR__
 
 FragTrap::~FragTrap() {

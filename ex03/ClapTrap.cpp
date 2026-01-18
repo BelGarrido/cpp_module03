@@ -18,12 +18,21 @@ ClapTrap::ClapTrap(std::string &target, int hitPoints, int energyPoint, int atta
     std::cout << "ClapTrap " << _name << " created" << std::endl;
 }
 
+//______________________________________COPY__
+
 ClapTrap &ClapTrap::operator=(const ClapTrap &original) {
     this->_name = original._name;
     this->_attackDamage = original._attackDamage;
     this->_hitPoints = original._hitPoints;
     this->_energyPoints = original._energyPoints;
     return *this;
+}
+
+ClapTrap::ClapTrap (const ClapTrap &original) {
+    this->_name = original._name;
+    this->_attackDamage = original._attackDamage;
+    this->_hitPoints = original._hitPoints;
+    this->_energyPoints = original._energyPoints;
 }
 
 //_________________________________DESTRUCTOR__
